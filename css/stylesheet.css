@@ -1,0 +1,107 @@
+.grid-discussion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    background-color: #00030e;
+    overflow: hidden;
+    padding: 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    color: #EFDCAC;
+    justify-content: space-evenly;
+}
+
+nav a{
+    float: left;
+    color: #EFDCAC;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: #bcba90;
+    color: #00030e;
+}
+nav a.active{
+    background-color: #EFDCAC;
+    color: #45462a;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img {
+        animation-play-state: paused;
+        visibility: hidden;
+    }
+    video {
+        animation-play-state: paused;
+        visibility: hidden;
+    }
+}
+
+h1{
+    padding: 10px;
+    font-size: 30px;
+    background-color: #45462a;
+    color: #EFDCAC;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    background-color: #bcba90;
+}
+h3{
+    font-size: large;
+    padding: 10px 0 15px 0;
+    text-align: center;
+    background-color: #bcba90;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    padding: 10px;
+}
+
+p{
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+}
+.centerimgs{
+    width: 50%;
+    border: 20px groove #45462a;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+
+.offpage{
+    position: absolute;
+    left: -1000px;
+}
+
+.offpage:focus{
+    position: relative;
+    left:10px;         
+}
+
